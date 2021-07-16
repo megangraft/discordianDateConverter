@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+<html lang="en">
+<head>
+    <script type="text/javascript" src="{% static 'jquery-3.6.0.min.js' %}">
+</script>
+    <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discordian Calendar Conversion</title>
+    The site where you can convert a Gregorian calendar date to Discordian calendar date
+</head>
+<body>
+    {% block content %}
+
+    {% endblock %}
+</body>
+<!-- load html elements before running the JS thats why its at the bottom of the file-->
+<script src="static/main.js"></script>
+</html>
